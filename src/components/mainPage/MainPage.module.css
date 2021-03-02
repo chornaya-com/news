@@ -3,12 +3,12 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Shippori Mincho', serif;;
+    font-family: 'Shippori Mincho', serif;
+    background-color: rgb(247, 247, 245);
 }
 
 .mainPage {
     height: 100vh;
-    background-color: rgb(247, 247, 245);
     display: flex;
     flex-direction: column;
     justify-items: center;
@@ -18,5 +18,9 @@
 .mainPageHeader {
     font-weight: 800;
     font-size: 42px;
+}
 
+.newsFeed {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }

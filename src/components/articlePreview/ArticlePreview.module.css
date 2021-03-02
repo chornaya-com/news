@@ -1,0 +1,20 @@
+.articlePreviewCard {
+    width: 420px;
+    min-height: 180px;
+    padding: 10px;
+    border: solid 1px;
+    margin: 20px;
+}
+
+.articlePreviewTitle {
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.articleSubtitle {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(151,151,151);
+    margin-bottom: 10px;
+}
