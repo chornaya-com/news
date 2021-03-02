@@ -9,20 +9,23 @@
 .articlePreviewTitle {
     font-size: 20px;
     font-weight: 800;
-    margin-bottom: 10px;
 }
 
 .articleSubtitle {
     font-size: 14px;
     font-weight: 400;
-    color: rgb(151,151,151);
-    margin-bottom: 10px;
+    color: rgb(151, 151, 151);
+    margin: 10px 0;
+}
+
+.articleDescription {
+    font-size: 16px;
 }
 
 .imageContainer {
     width: 420px;
     height: 240px;
-    background-color: rgb(246,143,136);
+    background-color: rgb(246, 143, 136);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -32,4 +35,30 @@
     max-width: 360px;
     max-height: 220px;
     align-items: center;
+}
+@media (max-width: 600px) {
+    .articlePreviewCard {
+        width: 300px;
+        margin: 10px;
+        padding: 5px;
+    }
+    .articlePreviewTitle {
+        font-size: 18px;
+    }
+    .articleSubtitle {
+        margin: 5px 0;
+    }
+
+    .articleDescription {
+        font-size: 14px;
+    }
+
+    .imageContainer {
+        width: 300px;
+        height: 200px;
+    }
+    .image {
+        max-width: 280px;
+        max-height: 180px;
+    }
 }

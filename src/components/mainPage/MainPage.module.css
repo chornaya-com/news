@@ -8,7 +8,6 @@
 }
 
 .mainPage {
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-items: center;
@@ -18,9 +17,19 @@
 .mainPageHeader {
     font-weight: 800;
     font-size: 42px;
+    margin: 20px;
 }
 
 .newsFeed {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+@media (max-width: 600px) {
+    .mainPageHeader{
+        font-size: 26px;
+    }
 }

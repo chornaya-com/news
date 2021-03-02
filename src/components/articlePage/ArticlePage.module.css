@@ -17,35 +17,50 @@
 }
 
 .contentContainer {
-
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     justify-items: center;
+    margin-top: 20px;
 }
 
 .image {
     background-color: rgb(95, 130, 192);
-    width: 480px;
-    padding: 10px;
+    width: 600px;
+    padding: 20px;
 }
 
 .content {
-    background-color: rgb(95, 130, 192);
+    width: 600px;
     font-size: 20px;
     font-weight: 400;
-    padding: 10px;
-    color: white;
+    padding: 20px 18px;
+    border: 2px solid rgb(95, 130, 192);
 }
 
-.link, a {
+.link,
+a {
     margin-top: 10px;
     font-weight: 600;
-    background-color: rgb(95, 130, 192);
     text-decoration: none;
     color: rgb(10, 47, 232);
 }
 
 a:hover {
-    color: rgb(7,32,162);
+    color: rgb(7, 32, 162);
 }
 
+@media (max-width: 600px) {
+    .title {
+        font-size: 22px;
+    }
+
+    .image {
+        width: 300px;
+    }
+
+    .content {
+        width: 300px;
+        font-size: 16px;
+    }
+}

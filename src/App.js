@@ -9,7 +9,8 @@ function App() {
     const url =
         'http://newsapi.org/v2/everything?q=apple&from=2021-03-01&to=2021-03-01&sortBy=popularity&apiKey=1b1391fcf4054a89b20b384d363cec28';
     const [articles, setArticles] = React.useState([]);
-    const [activePage, setActivePage] = React.useState('Article Page');
+    const [activePage, setActivePage] = React.useState('Main Page');
+    const [selectedArticle, setSelectedArticle] = React.useState(false);
     const isMainPage = activePage === 'Main Page';
     const isArticlePage = activePage === 'Article Page';
 
@@ -22,8 +23,15 @@ function App() {
             .catch((error) => console.error(error));
     }, []);
 
+    const openArticle = (article) => {
+        setSelectedArticle(article);
+        setActivePage('Article Page');
+    };
+
     const contextValue = {
         articles,
+        openArticle,
+        selectedArticle,
     };
 
     return (
