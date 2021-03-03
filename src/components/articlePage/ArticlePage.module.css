@@ -1,5 +1,25 @@
+.toMainPage {
+    display: block;
+    padding: 5px 0;
+    background-color: rgb(225, 96, 96);
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 120px;
+    height: 24px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.toMainPage:hover {
+    background-color: #ca5656;
+    box-shadow: 2px 2px 5px lightgrey;
+}
+
 .articleContainer {
-    margin: 20px;
+    margin: 10px 20px;
     background-color: rgb(247, 247, 245);
 }
 
@@ -37,20 +57,24 @@
     padding: 20px 18px;
     border: 2px solid rgb(95, 130, 192);
 }
-
-.link,
-a {
-    margin-top: 10px;
+.link {
+    margin-top: 20px;
+}
+.link a {
     font-weight: 600;
     text-decoration: none;
     color: rgb(10, 47, 232);
 }
 
-a:hover {
+.link a:hover {
     color: rgb(7, 32, 162);
 }
 
 @media (max-width: 600px) {
+    .toMainPage{
+        width: 100px;
+        font-size: 16px;
+    }
     .title {
         font-size: 22px;
     }
