@@ -22,7 +22,7 @@ export function ArticlePage() {
                 <div className={cn.content}>
                     {selectedArticle.content.slice(0, 201)}
                     <div className={cn.link}>
-                        <a href={selectedArticle.url} target="_blank">
+                        <a href={selectedArticle.url} target="_blank" rel="noreferrer">
                             Continue reading...
                         </a>
                     </div>
