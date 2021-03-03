@@ -7,7 +7,7 @@ export const AppContext = React.createContext();
 
 function App() {
     const url =
-        'http://newsapi.org/v2/everything?q=apple&from=2021-03-01&to=2021-03-01&sortBy=popularity&apiKey=1b1391fcf4054a89b20b384d363cec28';
+        'http://newsapi.org/v2/everything?q=apple&from=2021-02-23&to=2021-03-02&sortBy=popularity&apiKey=1b1391fcf4054a89b20b384d363cec28';
     const [articles, setArticles] = React.useState([]);
     const [activePage, setActivePage] = React.useState('Main Page');
     const [selectedArticle, setSelectedArticle] = React.useState(false);
