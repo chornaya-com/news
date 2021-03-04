@@ -23,14 +23,14 @@ export function ArticlePage() {
             <div className={cn.articleContainer}>
                 <div className={cn.title}>{selectedArticle.title}</div>
                 <div className={cn.subtitle}>
-                    by {selectedArticle.author} on
-                    {new Date(selectedArticle.publishedAt).toDateString()}
-                    <p>source: {selectedArticle.source.name}</p>
+                    {selectedArticle.authors.length > 0 && `by ${selectedArticle.authors}`}
+                    on {new Date(selectedArticle.pubDate).toDateString()}
+                    <p>source: {selectedArticle.source}</p>
                 </div>
                 <div className={cn.contentContainer}>
-                    <img className={cn.image} src={selectedArticle.urlToImage} alt="" />
+                    <img className={cn.image} src={selectedArticle.imageUrl} alt="" />
                     <div className={cn.content}>
-                        {selectedArticle.content.slice(0, 201)}
+                        {selectedArticle.content.slice(0, 221).concat('...')}
                         <div className={cn.link}>
                             <a href={selectedArticle.url} target="_blank" rel="noreferrer">
                                 Continue reading...

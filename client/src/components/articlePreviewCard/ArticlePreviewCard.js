@@ -7,17 +7,17 @@ export function ArticlePreviewCard() {
     const {articles} = React.useContext(AppContext);
 
     return articles.map((article, i) => {
-        const date = new Date(article.publishedAt).toDateString();
+        const date = new Date(article.pubDate).toDateString();
         return (
             <div className={cn.articlePreviewCard} key={i}>
                 <Link className={cn.link} to={`/article/${i}`}>
                     <div className={cn.imageContainer}>
-                        <img className={cn.image} src={article.urlToImage} alt="" />
+                        <img className={cn.image} src={article.imageUrl} alt="" />
                     </div>
                     <div className={cn.articlePreviewTitle}>{article.title}</div>
                 </Link>
                 <div className={cn.articleSubtitle}>
-                    by {article.author} on {date}
+                    {article.authors.length > 0 && `by ${article.authors}`} on {date}
                 </div>
                 <div className={cn.articleDescription}>{article.description}</div>
             </div>

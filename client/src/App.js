@@ -8,15 +8,14 @@ export const AppContext = React.createContext();
 
 function App() {
     const url =
-        'https://newsapi.org/v2/everything?q=apple&from=2021-02-23&to=2021-03-02&sortBy=popularity&apiKey=1b1391fcf4054a89b20b384d363cec28';
+        'https://us-central1-news-apple.cloudfunctions.net/queryNews?q=Apple+Google+Tesla+SpaceX+Amazon+Facebook&from=2021-03-01&country=us+gb&language=en&size=25&sortBy=date';
     const [articles, setArticles] = React.useState([]);
     const [selectedArticle, setSelectedArticle] = React.useState(false);
 
     React.useEffect(() => {
-        axios
-            .get(url)
+        axios({method: 'get', url})
             .then((response) => {
-                setArticles(response.data.articles);
+                setArticles(response.data.hits);
             })
             .catch((error) => console.error(error));
     }, []);
