@@ -2,7 +2,7 @@
 [![CircleCI](https://circleci.com/gh/chornaya-com/news/tree/master.svg?style=svg&circle-token=63f6f27e841f7eff22bbd348eaee6daf742f2c66)](https://circleci.com/gh/chornaya-com/news/tree/master)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)]()
 
-The latest news about Apple from all over the world. This web app bases on News API.
+The tech latest news from all over the world. This web app bases on Datanews API.
 Implemented with React (incl. React Context Hook), Firebase and Circle CI integration, stylized with CSS.
 
 [**Live demo**](https://news-apple.web.app/)
@@ -13,6 +13,7 @@ Implemented with React (incl. React Context Hook), Firebase and Circle CI integr
 - [x] circle ci setup
 - [x] axios for fetching data
 - [x] react router to switch pages
+- [x] serverless backend API
 
 ## How To
 ### Install Dependencies
